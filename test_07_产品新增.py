@@ -1,7 +1,7 @@
 import unittest
 import time
 from selenium import webdriver
-class Denglu(unittest.TestCase()):
+class Denglu(unittest.TestCase):
     huohu=webdriver.Firefox()
     def login(self):
         self.huohu.get("http://123.57.140.190/manage/index.php")

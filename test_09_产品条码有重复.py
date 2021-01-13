@@ -2,7 +2,7 @@ import unittest
 import time
 from selenium import webdriver
 
-class Denglu(unittest.TestCase()):
+class Denglu(unittest.TestCase):
     huohu = webdriver.Firefox()
 
     def login(self):
