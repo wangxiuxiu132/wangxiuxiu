@@ -18,7 +18,9 @@ class Denglu(unittest.TestCase):
         self.huohu.find_element_by_xpath("/html/body/div/section/form/div/input[3]").click()
         time.sleep(1)
         expect =  self.huohu.find_element_by_xpath("/html/body/div[1]/div").text
-        self.assertEqual(expect, "您输入的账号或密码有误！", msg="账号有误")
+        print(expect)
+
+        self.assertEqual(expect, "您输入的帐号或密码有误！", msg="账号有误")
         time.sleep(2)
 
 if __name__ == '__main__':
